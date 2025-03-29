@@ -15,16 +15,30 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_icon" translatesAutoresizingMaskIntoConstraints="NO" id="heT-Eh-5AS">
+                                <rect key="frame" x="98.666666666666671" y="374" width="195.66666666666663" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="195" id="8eL-WC-Uzi"/>
+                                    <constraint firstAttribute="height" constant="104" id="PQS-3U-jo9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="darkMoon"/>
+                        <constraints>
+                            <constraint firstItem="heT-Eh-5AS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="INp-eh-WAf"/>
+                            <constraint firstItem="heT-Eh-5AS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dQD-vf-v88"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <image name="launch_icon" width="195.66667175292969" height="104"/>
         <namedColor name="darkMoon">
             <color red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

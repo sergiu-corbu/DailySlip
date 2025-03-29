@@ -10,6 +10,8 @@ import SwiftUI
 extension Color {
   
   static let deepGray = Color(0x454545)
+  static let direWolf = Color(0x282829)
+  static let azure = Color(0x0A84FF)
 }
 
 extension Color {
