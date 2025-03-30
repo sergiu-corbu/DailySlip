@@ -19,16 +19,15 @@ struct OnboardingView: View {
         Text("You are about to start a\ncuriosity-driven daily habit.")
           .foregroundStyle(.white)
           .font(fontProvider.title1)
-        Rectangle()
-          .fill(Color(0x545456).opacity(0.6))
-          .frame(height: 1)
+        DS.DividerView()
         onboardingVideoBoxView
       }
       .padding(EdgeInsets(top: 10, leading: 28, bottom: 28, trailing: 28))
 
         
       DS.Buttons.StandardButton(title: "Set Up", action: onSetUp)
-        .padding(EdgeInsets(top: 32, leading: 0, bottom: 8, trailing: 0))
+        .padding(.top, 32)
+        .safeAreaPadding(.bottom, 8)
         .frame(maxWidth: .infinity)
     }
     .background(Color.darkMoon)

@@ -26,6 +26,14 @@ extension DesignSystem {
         .frame(maxWidth: .infinity, minHeight: 44)
     }
   }
+  
+  struct DividerView: View {
+    var body: some View {
+      Rectangle()
+        .fill(Color(0x545456).opacity(0.6))
+        .frame(height: 1)
+    }
+  }
 }
 
 #Preview(traits: .sizeThatFitsLayout) {

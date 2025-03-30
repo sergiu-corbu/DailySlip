@@ -11,7 +11,7 @@ import UIKit
 class RootCoordinator: Coordinator {
   
   //MARK: - Coordinators
-  //  var mainCoordinator: MainCoordinator?
+  var slipCoordinator: SlipCoordinator?
   var onboardingCoordinator: OnboardingCoordinator?
   
   //MARK: - Properties
@@ -29,14 +29,15 @@ class RootCoordinator: Coordinator {
   
   func start(animated: Bool) {
     if didShowOnboarding {
-      showMainFlow()
+      showSlipFlow()
     } else {
       showOnboardingFlow()
     }
   }
   
-  func showMainFlow() {
-    
+  func showSlipFlow() {
+    slipCoordinator = SlipCoordinator(navigationController: navigationController)
+    slipCoordinator?.start(animated: true)
   }
   
   func showOnboardingFlow() {
@@ -52,7 +53,7 @@ class RootCoordinator: Coordinator {
   private func handleOnboardingInteractionFinished() {
     didShowOnboarding = true
     onboardingCoordinator = nil
-    showMainFlow()
+    showSlipFlow()
   }
 }
 
