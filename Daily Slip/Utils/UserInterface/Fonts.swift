@@ -27,6 +27,7 @@ protocol FontProvider {
   var headerLight: Font { get }
   var title1: Font { get }
   var standardAction: Font { get }
+  var bigHeader: Font { get }
   func font(size: CGFloat, weight: Font.Weight) -> Font
 }
 
@@ -37,7 +38,7 @@ struct DefaultFontProvider: FontProvider {
   let header = Font.system(size: 17, weight: .semibold)
   let headerLight = Font.system(size: 17, weight: .regular)
   let title1 = Font.system(size: 22, weight: .bold)
-  
+  let bigHeader = Font.system(size: 24, weight: .semibold)
   let standardAction = Font.system(size: 15, weight: .regular)
   
   func font(size: CGFloat, weight: Font.Weight) -> Font {

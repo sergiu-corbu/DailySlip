@@ -17,6 +17,6 @@ class SlipCoordinator: Coordinator {
   }
   
   func start(animated: Bool) {
-    navigationController?.setViewControllers([], animated: false)
+    navigationController?.setViewControllers([SlipViewController()], animated: false)
   }
 }

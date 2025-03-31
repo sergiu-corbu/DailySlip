@@ -9,11 +9,11 @@ import Foundation
 
 enum DataProviderError: LocalizedError {
   
-  case missingText
+  case missingData
   
   var errorDescription: String? {
     switch self {
-    case .missingText: "No text was found in the response"
+    case .missingData: "No text was found in the response"
       
     }
   }

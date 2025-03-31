@@ -12,7 +12,7 @@
 		B94C24002D974191000004CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94C23F52D974191000004CC /* LaunchScreen.storyboard */; };
 		B94C24042D9742AF000004CC /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = B94C24032D9742AF000004CC /* GoogleGenerativeAI */; };
 		B94C240A2D9742C1000004CC /* DataProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24052D9742C1000004CC /* DataProviderError.swift */; };
-		B94C240B2D9742C1000004CC /* GenerativeAIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24072D9742C1000004CC /* GenerativeAIProvider.swift */; };
+		B94C240B2D9742C1000004CC /* SlipDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24072D9742C1000004CC /* SlipDataProvider.swift */; };
 		B94C240C2D9742C1000004CC /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24082D9742C1000004CC /* MockDataProvider.swift */; };
 		B94C240D2D9742C1000004CC /* GeminiDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24062D9742C1000004CC /* GeminiDataProvider.swift */; };
 		B94C241A2D986F68000004CC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24172D986F68000004CC /* Colors.swift */; };
@@ -33,7 +33,7 @@
 		B94C24402D987E33000004CC /* JSONCacheFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C243A2D987E33000004CC /* JSONCacheFolder.swift */; };
 		B94C24412D987E33000004CC /* JSONCache + Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24382D987E33000004CC /* JSONCache + Shared.swift */; };
 		B94C24432D987ECA000004CC /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24422D987ECA000004CC /* Collection+Extensions.swift */; };
-		B94C24462D988060000004CC /* CategoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24452D988060000004CC /* CategoryDTO.swift */; };
+		B94C24462D988060000004CC /* TopicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24452D988060000004CC /* TopicDTO.swift */; };
 		B94C24482D988252000004CC /* DottedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24472D988252000004CC /* DottedBackgroundView.swift */; };
 		B94C244A2D9885C6000004CC /* SlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C24492D9885C6000004CC /* SlipView.swift */; };
 		B983D72C2D99765900C5AA9A /* PushNotificationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983D72B2D99765900C5AA9A /* PushNotificationPermissionView.swift */; };
@@ -43,6 +43,9 @@
 		B983D7392D99803700C5AA9A /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983D7382D99803700C5AA9A /* PushNotificationManager.swift */; };
 		B983D73D2D9981AD00C5AA9A /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = B983D73C2D9981AD00C5AA9A /* Factory */; };
 		B983D73F2D9981C500C5AA9A /* Dependencies+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983D73E2D9981C500C5AA9A /* Dependencies+Extensions.swift */; };
+		B9B0BE792D9AB17800B525AA /* SlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0BE782D9AB17800B525AA /* SlipViewController.swift */; };
+		B9B0BE7B2D9ABB4000B525AA /* TopicCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0BE7A2D9ABB4000B525AA /* TopicCellView.swift */; };
+		B9B0BE802D9ABF4C00B525AA /* SelectedTopicDeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0BE7F2D9ABF4C00B525AA /* SelectedTopicDeliveryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +56,7 @@
 		B94C23F42D974191000004CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B94C24052D9742C1000004CC /* DataProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderError.swift; sourceTree = "<group>"; };
 		B94C24062D9742C1000004CC /* GeminiDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiDataProvider.swift; sourceTree = "<group>"; };
-		B94C24072D9742C1000004CC /* GenerativeAIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerativeAIProvider.swift; sourceTree = "<group>"; };
+		B94C24072D9742C1000004CC /* SlipDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipDataProvider.swift; sourceTree = "<group>"; };
 		B94C24082D9742C1000004CC /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
 		B94C24172D986F68000004CC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B94C24182D986F68000004CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -73,7 +76,7 @@
 		B94C243A2D987E33000004CC /* JSONCacheFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCacheFolder.swift; sourceTree = "<group>"; };
 		B94C243B2D987E33000004CC /* JSONCacheResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCacheResource.swift; sourceTree = "<group>"; };
 		B94C24422D987ECA000004CC /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
-		B94C24452D988060000004CC /* CategoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDTO.swift; sourceTree = "<group>"; };
+		B94C24452D988060000004CC /* TopicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDTO.swift; sourceTree = "<group>"; };
 		B94C24472D988252000004CC /* DottedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedBackgroundView.swift; sourceTree = "<group>"; };
 		B94C24492D9885C6000004CC /* SlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipView.swift; sourceTree = "<group>"; };
 		B983D72B2D99765900C5AA9A /* PushNotificationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationPermissionView.swift; sourceTree = "<group>"; };
@@ -82,6 +85,9 @@
 		B983D7352D997F5200C5AA9A /* SlipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipViewModel.swift; sourceTree = "<group>"; };
 		B983D7382D99803700C5AA9A /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		B983D73E2D9981C500C5AA9A /* Dependencies+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dependencies+Extensions.swift"; sourceTree = "<group>"; };
+		B9B0BE782D9AB17800B525AA /* SlipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipViewController.swift; sourceTree = "<group>"; };
+		B9B0BE7A2D9ABB4000B525AA /* TopicCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCellView.swift; sourceTree = "<group>"; };
+		B9B0BE7F2D9ABF4C00B525AA /* SelectedTopicDeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedTopicDeliveryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +141,7 @@
 			children = (
 				B94C24052D9742C1000004CC /* DataProviderError.swift */,
 				B94C24062D9742C1000004CC /* GeminiDataProvider.swift */,
-				B94C24072D9742C1000004CC /* GenerativeAIProvider.swift */,
+				B94C24072D9742C1000004CC /* SlipDataProvider.swift */,
 				B94C24082D9742C1000004CC /* MockDataProvider.swift */,
 			);
 			path = SlipDataProvider;
@@ -157,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B94C241E2D986FD9000004CC /* InlineHeaderView.swift */,
+				B9B0BE7A2D9ABB4000B525AA /* TopicCellView.swift */,
 				B94C24262D987864000004CC /* Buttons.swift */,
 				B94C24472D988252000004CC /* DottedBackgroundView.swift */,
 			);
@@ -187,7 +194,6 @@
 			children = (
 				B94C24282D987A22000004CC /* OnboardingCoordinator.swift */,
 				B94C241C2D986F9B000004CC /* OnboardingView.swift */,
-				B94C24452D988060000004CC /* CategoryDTO.swift */,
 			);
 			path = OnboardingFlow;
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 			children = (
 				B94C24492D9885C6000004CC /* SlipView.swift */,
 				B983D7352D997F5200C5AA9A /* SlipViewModel.swift */,
+				B9B0BE782D9AB17800B525AA /* SlipViewController.swift */,
+				B9B0BE7F2D9ABF4C00B525AA /* SelectedTopicDeliveryView.swift */,
 			);
 			path = Slip;
 			sourceTree = "<group>";
@@ -263,6 +271,7 @@
 		B983D7372D99801200C5AA9A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B9B0BE7C2D9ABBE600B525AA /* Model */,
 				B983D73A2D99803D00C5AA9A /* Services */,
 				B94C24092D9742C1000004CC /* SlipDataProvider */,
 			);
@@ -283,6 +292,14 @@
 				B983D73E2D9981C500C5AA9A /* Dependencies+Extensions.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		B9B0BE7C2D9ABBE600B525AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B94C24452D988060000004CC /* TopicDTO.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B983D7332D997ED500C5AA9A /* SlipCoordinator.swift in Sources */,
+				B9B0BE802D9ABF4C00B525AA /* SelectedTopicDeliveryView.swift in Sources */,
 				B94C243D2D987E33000004CC /* JSONCacheResource.swift in Sources */,
 				B983D72E2D99775D00C5AA9A /* View+Extensions.swift in Sources */,
 				B94C243E2D987E33000004CC /* JSONCache.swift in Sources */,
@@ -376,6 +394,7 @@
 				B94C24432D987ECA000004CC /* Collection+Extensions.swift in Sources */,
 				B94C24402D987E33000004CC /* JSONCacheFolder.swift in Sources */,
 				B94C24412D987E33000004CC /* JSONCache + Shared.swift in Sources */,
+				B9B0BE792D9AB17800B525AA /* SlipViewController.swift in Sources */,
 				B94C24362D987D0D000004CC /* UserDefault.swift in Sources */,
 				B983D72C2D99765900C5AA9A /* PushNotificationPermissionView.swift in Sources */,
 				B983D7392D99803700C5AA9A /* PushNotificationManager.swift in Sources */,
@@ -388,12 +407,13 @@
 				B94C24482D988252000004CC /* DottedBackgroundView.swift in Sources */,
 				B94C24272D987864000004CC /* Buttons.swift in Sources */,
 				B94C241D2D986F9B000004CC /* OnboardingView.swift in Sources */,
+				B9B0BE7B2D9ABB4000B525AA /* TopicCellView.swift in Sources */,
 				B94C242C2D987A94000004CC /* Coordinator.swift in Sources */,
-				B94C24462D988060000004CC /* CategoryDTO.swift in Sources */,
+				B94C24462D988060000004CC /* TopicDTO.swift in Sources */,
 				B94C24302D987B99000004CC /* RootCoordinator.swift in Sources */,
 				B94C240A2D9742C1000004CC /* DataProviderError.swift in Sources */,
 				B94C241F2D986FD9000004CC /* InlineHeaderView.swift in Sources */,
-				B94C240B2D9742C1000004CC /* GenerativeAIProvider.swift in Sources */,
+				B94C240B2D9742C1000004CC /* SlipDataProvider.swift in Sources */,
 				B94C24222D987051000004CC /* Fonts.swift in Sources */,
 				B94C240C2D9742C1000004CC /* MockDataProvider.swift in Sources */,
 				B94C240D2D9742C1000004CC /* GeminiDataProvider.swift in Sources */,

@@ -1,10 +1,37 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Don't miss the time your slip is ready." : {
+
+    },
+    "Every day at" : {
+
+    },
     "How it works" : {
 
     },
+    "Search Topic" : {
+
+    },
+    "Set up the time for your\ndaily slip" : {
+
+    },
+    "Shake your phone to get\nsome slip recs" : {
+
+    },
+    "Turn on notifications" : {
+
+    },
     "You are about to start a\ncuriosity-driven daily habit." : {
+
+    },
+    "Your first slip" : {
 
     }
   },

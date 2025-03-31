@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MockDataProvider: GenerativeAIProvider {
+struct MockDataProvider: SlipDataProvider {
   
   let randomQuotes: [String] = [
     "The only way to do great work is to love what you do. – Steve Jobs",
@@ -22,8 +22,12 @@ struct MockDataProvider: GenerativeAIProvider {
     "Success is not final, failure is not fatal: It is the courage to continue that counts. – Winston Churchill"
   ]
   
-  func generateTextFromInput(_ input: String) async throws -> String {
+  func getTopics(input: String?) async throws -> [Topic] {
     try await Task.sleep(for: .seconds(1))
-    return randomQuotes.randomElement()!
+    return Topic.mockTopics.shuffled()
+  }
+  
+  func generateSlipForTopic(_ topic: Topic) async throws -> String {
+    ""
   }
 }

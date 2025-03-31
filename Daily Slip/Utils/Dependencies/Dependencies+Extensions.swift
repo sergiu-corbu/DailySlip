@@ -13,4 +13,8 @@ extension Container {
   var pushNotificationManager: Factory<PushNotificationsManager> {
     Factory(self) { PushNotificationsManager() }
   }
+  
+  var slipDataProvider: Factory<SlipDataProvider> {
+    Factory(self) { GeminiDataProvider() }
+  }
 }

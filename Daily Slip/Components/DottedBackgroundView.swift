@@ -19,7 +19,7 @@ extension DS {
         let dottedRow = dottedRowView(in: proxy.size.width)
         let rowsCount = Int(proxy.size.height / (circleDiameter + spacing))
         VStack(alignment: .center, spacing: spacing) {
-          ForEach(0..<rowsCount, id: \.self) { _ in
+          ForEach(0...rowsCount, id: \.self) { _ in
             dottedRow
           }
         }

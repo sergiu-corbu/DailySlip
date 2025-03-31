@@ -13,6 +13,9 @@ extension Color {
   static let direWolf = Color(0x282829)
   static let azure = Color(0x0A84FF)
   static let ghostWhite = Color(0xF8F9FC)
+  static let lightGray = Color(0xEBEBF5)
+  static let cement = Color(0x787880)
+  static let richGray = Color(0x29292A)
 }
 
 extension Color {
