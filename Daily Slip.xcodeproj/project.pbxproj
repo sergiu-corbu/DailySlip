@@ -46,6 +46,8 @@
 		B9B0BE792D9AB17800B525AA /* SlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0BE782D9AB17800B525AA /* SlipViewController.swift */; };
 		B9B0BE7B2D9ABB4000B525AA /* TopicCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0BE7A2D9ABB4000B525AA /* TopicCellView.swift */; };
 		B9B0BE802D9ABF4C00B525AA /* SelectedTopicDeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0BE7F2D9ABF4C00B525AA /* SelectedTopicDeliveryView.swift */; };
+		B9B28D3D2DA5722200131715 /* WidgetSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B28D3C2DA5722200131715 /* WidgetSetupView.swift */; };
+		B9B28D402DA5724F00131715 /* WidgetSetupState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B28D3F2DA5724F00131715 /* WidgetSetupState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		B9B0BE782D9AB17800B525AA /* SlipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipViewController.swift; sourceTree = "<group>"; };
 		B9B0BE7A2D9ABB4000B525AA /* TopicCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCellView.swift; sourceTree = "<group>"; };
 		B9B0BE7F2D9ABF4C00B525AA /* SelectedTopicDeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedTopicDeliveryView.swift; sourceTree = "<group>"; };
+		B9B28D3C2DA5722200131715 /* WidgetSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSetupView.swift; sourceTree = "<group>"; };
+		B9B28D3F2DA5724F00131715 /* WidgetSetupState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSetupState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				B983D7322D997ED500C5AA9A /* SlipCoordinator.swift */,
+				B9B28D3E2DA5723D00131715 /* WidgetSetup */,
 				B983D7342D997F4C00C5AA9A /* Slip */,
 			);
 			path = SlipFlow;
@@ -300,6 +305,15 @@
 				B94C24452D988060000004CC /* TopicDTO.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B9B28D3E2DA5723D00131715 /* WidgetSetup */ = {
+			isa = PBXGroup;
+			children = (
+				B9B28D3C2DA5722200131715 /* WidgetSetupView.swift */,
+				B9B28D3F2DA5724F00131715 /* WidgetSetupState.swift */,
+			);
+			path = WidgetSetup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +408,7 @@
 				B94C24432D987ECA000004CC /* Collection+Extensions.swift in Sources */,
 				B94C24402D987E33000004CC /* JSONCacheFolder.swift in Sources */,
 				B94C24412D987E33000004CC /* JSONCache + Shared.swift in Sources */,
+				B9B28D402DA5724F00131715 /* WidgetSetupState.swift in Sources */,
 				B9B0BE792D9AB17800B525AA /* SlipViewController.swift in Sources */,
 				B94C24362D987D0D000004CC /* UserDefault.swift in Sources */,
 				B983D72C2D99765900C5AA9A /* PushNotificationPermissionView.swift in Sources */,
@@ -402,6 +417,7 @@
 				B94C241A2D986F68000004CC /* Colors.swift in Sources */,
 				B94C241B2D986F68000004CC /* Constants.swift in Sources */,
 				B94C24292D987A22000004CC /* OnboardingCoordinator.swift in Sources */,
+				B9B28D3D2DA5722200131715 /* WidgetSetupView.swift in Sources */,
 				B94C24342D987BE7000004CC /* CustomNavigationController.swift in Sources */,
 				B983D73F2D9981C500C5AA9A /* Dependencies+Extensions.swift in Sources */,
 				B94C24482D988252000004CC /* DottedBackgroundView.swift in Sources */,
